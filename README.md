@@ -4,7 +4,7 @@ The helper script [`bitsquatting.py`](https://github.com/pcaversaccio/bitsquatti
 ## What Is Bitsquatting
 > I borrowed this explanation from [here](https://github.com/benjaminpetrin-zz/bitsquatting).
 
-Bitsquatting is _DNS Hijacking without exploitation_. A term coined by Artem Dinaburg to refer to the act of registering domains that are 1-bit off from some other legitimate domain in order to capture traffic that was destined for the legitimate domain but became corrupted and ended up on the alternate domain.
+Bitsquatting is _DNS Hijacking without exploitation_. A term coined by [Artem Dinaburg](https://web.archive.org/web/20180713212603/http://media.blackhat.com/bh-us-11/Dinaburg/BH_US_11_Dinaburg_Bitsquatting_WP.pdf) to refer to the act of registering domains that are 1-bit off from some other legitimate domain in order to capture traffic that was destined for the legitimate domain but became corrupted and ended up on the alternate domain.
 
 Bitsquatting is due to an error on the part of the connecting client machine and not anything the operator of a domain can explicitly protect against except by purchasing additional domains. The more popular a website is, the more likely a connecting client may accidentally connect to some other domain on accident.
 
@@ -54,4 +54,5 @@ This is due to corruption in memory (or potentially transmission) and it is dist
 The attacker could bitsquat popular `ens` domains, register them, and could receive a very small portion of the transactions meant for someone else.
 
 ## Reference
+- https://web.archive.org/web/20180713212603/http://media.blackhat.com/bh-us-11/Dinaburg/BH_US_11_Dinaburg_Bitsquatting_WP.pdf
 - https://github.com/benjaminpetrin-zz/bitsquatting
