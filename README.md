@@ -1,5 +1,5 @@
 # Bitsquatting the Ethereum Name Service (ENS) Domain Names
-The helper script [`bitsquatting.py`](https://github.com/pcaversaccio/bitsquatting/blob/main/bitsquatting.py) generates permutations of an ENS domain that differ by 1-bit from the original domain.
+The helper script [`bitsquatting.py`](https://github.com/pcaversaccio/bitsquatting/blob/main/bitsquatting.py) generates (lowercase) permutations of an ENS domain that differ by 1-bit from the original domain.
 
 ## What Is Bitsquatting
 > I borrowed this explanation from [here](https://github.com/benjaminpetrin-zz/bitsquatting).
