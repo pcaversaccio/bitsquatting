@@ -1,10 +1,19 @@
-# Bitsquatting the ENS Domain Names
-The helper script [`bitsquatting.py`]() generates permutations of an ENS domain that differ by 1-bit from the original domain.
+# Bitsquatting the Ethereum Name Service (ENS) Domain Names
+The helper script [`bitsquatting.py`](https://github.com/pcaversaccio/bitsquatting/blob/main/bitsquatting.py) generates permutations of an ENS domain that differ by 1-bit from the original domain.
 
-## Example
+## What Is Bitsquatting
+> I borrowed this explanation from [here](https://github.com/benjaminpetrin-zz/bitsquatting).
+
+Bitsquatting is _DNS Hijacking without exploitation_. A term coined by Artem Dinaburg to refer to the act of registering domains that are 1-bit off from some other legitimate domain in order to capture traffic that was destined for the legitimate domain but became corrupted and ended up on the alternate domain.
+
+Bitsquatting is due to an error on the part of the connecting client machine and not anything the operator of a domain can explicitly protect against except by purchasing additional domains. The more popular a website is, the more likely a connecting client may accidentally connect to some other domain on accident.
+
+This is due to corruption in memory (or potentially transmission) and it is distinct from a typo made by a user (and therefor different from the more well-known practice of typosquatting). A good candidate domain name for bitsquatting is one that is both popular and not one visited by a user explicitly (that is, a domain that is not commonly navigated to in a web browser by a user). For example, `facebook.com` would not be a good candidate but `fbcdn.net` would be as it is the domain Facebook uses to host static resources that are embedded on `facebook.com`.
+
+## Example `wagmi.eth`
 *Original ENS Name:* `wagmi.eth`
 
-*Permutations:*
+*1-Bit Permutations:*
 - 7agmi.eth
 - wagmi.eth
 - gagmi.eth
@@ -40,3 +49,9 @@ The helper script [`bitsquatting.py`]() generates permutations of an ENS domain 
 - wagmm.eth
 - wagmk.eth
 - wagmh.eth
+
+## Potential Attack Vector
+The attacker could bitsquat popular `ens` domains, register them, and could receive a very small portion of the transactions meant for someone else.
+
+## Reference
+- https://github.com/benjaminpetrin-zz/bitsquatting
