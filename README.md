@@ -53,6 +53,7 @@ This is due to corruption in memory (or potentially transmission) and it is dist
 ## Potential Attack Vector
 The attacker could bitsquat popular `ens` domains, register them, and could receive a very small portion of the transactions meant for someone else.
 
-## Reference
+## References
 - https://web.archive.org/web/20180713212603/http://media.blackhat.com/bh-us-11/Dinaburg/BH_US_11_Dinaburg_Bitsquatting_WP.pdf
 - https://github.com/benjaminpetrin-zz/bitsquatting
+- https://arxiv.org/pdf/2104.05185.pdf
