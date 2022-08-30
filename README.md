@@ -1,7 +1,11 @@
 # Bitsquatting the Ethereum Name Service (ENS) Domain Names
+
+[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org)
+
 The helper script [`bitsquatting.py`](https://github.com/pcaversaccio/bitsquatting/blob/main/bitsquatting.py) generates (lowercase) permutations of an ENS domain that differ by 1-bit from the original domain.
 
 ## What Is Bitsquatting
+
 > I borrowed this explanation from [here](https://github.com/benjaminpetrin-zz/bitsquatting).
 
 Bitsquatting is _DNS Hijacking without exploitation_. A term coined by [Artem Dinaburg](https://web.archive.org/web/20180713212603/http://media.blackhat.com/bh-us-11/Dinaburg/BH_US_11_Dinaburg_Bitsquatting_WP.pdf) to refer to the act of registering domains that are 1-bit off from some other legitimate domain in order to capture traffic that was destined for the legitimate domain but became corrupted and ended up on the alternate domain.
@@ -11,6 +15,7 @@ Bitsquatting is due to an error on the part of the connecting client machine and
 This is due to corruption in memory (or potentially transmission) and it is distinct from a typo made by a user (and therefor different from the more well-known practice of typosquatting). A good candidate domain name for bitsquatting is one that is both popular and not one visited by a user explicitly (that is, a domain that is not commonly navigated to in a web browser by a user). For example, `facebook.com` would not be a good candidate but `fbcdn.net` would be as it is the domain Facebook uses to host static resources that are embedded on `facebook.com`.
 
 ## Example `wagmi.eth`
+
 *Original ENS Name:* `wagmi.eth`
 
 *1-Bit Permutations:*
@@ -51,9 +56,11 @@ This is due to corruption in memory (or potentially transmission) and it is dist
 - wagmh.eth
 
 ## Potential Attack Vector
+
 The attacker could bitsquat popular `ens` domains, register them, and could receive a very small portion of the transactions meant for someone else.
 
 ## References
+
 - https://web.archive.org/web/20180713212603/http://media.blackhat.com/bh-us-11/Dinaburg/BH_US_11_Dinaburg_Bitsquatting_WP.pdf
 - https://github.com/benjaminpetrin-zz/bitsquatting
 - https://arxiv.org/pdf/2104.05185.pdf
